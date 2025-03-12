@@ -24,6 +24,7 @@
         </activity>
         <activity android:name=".Miles_to_Kilometers"></activity>
         <activity android:name=".Feet_to_Meters"></activity>
+        <activity android:name=".Inches_to_Centimeters"></activity>
     </application>
 
 </manifest>
