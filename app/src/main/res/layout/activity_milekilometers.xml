@@ -4,8 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_light"
+    android:background="@color/background_dark"
     tools:context=".Miles_to_Kilometers">
+
+<!--    Title -->
+    <TextView
+        android:id="@+id/title"
+        style="@style/SyleTitleText"
+        android:text="Miles To Kilometers"/>
+
+<!--label enter -->
+    <TextView
+        android:id="@+id/lblEnter"
+        style="@style/StyleEnter"/>
+
+<!--    label results -->
+    <TextView
+        android:id="@+id/lblResult"
+        style="@style/StyleResult" />
+
+<!--    Miles  -->
+    <EditText
+       android:id="@+id/edtTxtMile"
+        style="@style/StyleEditText"
+        android:layout_below="@id/lblEnter"
+        android:hint="Miles"
+        />
+
+    <TextView
+        android:id="@+id/txtViewKilometers"
+        style="@style/StyleResultTextView"
+        android:hint="Km"
+        />
+
+<!--    Kilometers -->
+    <EditText
+        android:id="@+id/edtTxtKilometers"
+        style="@style/StyleEditText"
+        android:layout_below="@id/edtTxtMile"
+        android:hint="Km"
+        />
+
+    <TextView
+        android:id="@+id/txtViewMiles"
+        style="@style/StyleResultTextView"
+        android:layout_below="@id/txtViewKilometers"
+        android:hint="Miles"
+        />
+
+<!--    Button -->
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/backButtonStyle"
+        android:onClick="back"
+        />
+
+
+
 
 
 </RelativeLayout>
