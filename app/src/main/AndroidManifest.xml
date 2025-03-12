@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Miles_to_Kilometers"></activity>
+        <activity android:name=".Feet_to_Meters"></activity>
     </application>
 
 </manifest>
