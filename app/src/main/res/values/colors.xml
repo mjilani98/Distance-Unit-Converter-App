@@ -2,4 +2,25 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="gradient_start">#833AB4</color>
+    <color name="gradient_middle">#FD1D1D</color>
+    <color name="gradient_end">#FCB045</color>
+
+    <color name="primary_purple">#9B51E0</color>
+    <color name="secondary_pink">#E1306C</color>
+    <color name="accent_orange">#F77737</color>
+    <color name="background_dark">#262626</color>
+    <color name="background_light">#FFFFFF</color>
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#A8A8A8</color>
+
+    <color name="button_purple">#C13584</color>
+    <color name="button_pink">#E95950</color>
+    <color name="button_yellow">#FCAF45</color>
+
+    <color name="highlight_blue">#1DA1F2</color>
+    <color name="highlight_teal">#17C3B2</color>
+    <color name="highlight_violet">#6A0DAD</color>
+
 </resources>
