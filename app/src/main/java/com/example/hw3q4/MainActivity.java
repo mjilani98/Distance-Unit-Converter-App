@@ -56,7 +56,13 @@ public class MainActivity extends AppCompatActivity {
             //start miles to kilometers activity
             Intent mileKilmeterActivty = new Intent(this,Miles_to_Kilometers.class);
             startActivity(mileKilmeterActivty);
-
+        }
+        //if feet to meters selected
+        else if (id == R.id.feetTOmeters)
+        {
+            //start feet to meters screen
+            Intent feetTometersActivity = new Intent(this,Feet_to_Meters.class);
+            startActivity(feetTometersActivity);
         }
 
         return super.onOptionsItemSelected(item);
