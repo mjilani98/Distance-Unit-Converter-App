@@ -45,7 +45,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
         android:layout_below="@id/message"
-        android:text="- Miles <--> Kilometers"
+        android:text="- Miles to Kilometers"
         android:textColor="@color/text_primary"
         android:textSize="15dp"/>
 
@@ -57,7 +57,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
         android:layout_below="@id/miTOkm"
-        android:text="- Feet <--> Meters"
+        android:text="- Feet to Meters"
         android:textColor="@color/text_primary"
         android:textSize="15dp"/>
 
@@ -69,7 +69,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
         android:layout_below="@id/ftTOmt"
-        android:text="- Inches <--> Centimeters"
+        android:text="- Inches to Centimeters"
         android:textColor="@color/text_primary"
         android:textSize="15dp"/>
 
@@ -120,7 +120,6 @@
         android:text="3. Use the back button to return to the main menu."
         android:textColor="@color/text_primary"
         android:textSize="15dp"/>
-
 
 
 
