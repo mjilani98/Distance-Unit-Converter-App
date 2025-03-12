@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    tools:context=".Feet_to_Meters">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    Title -->
+    <TextView
+        android:id="@+id/title"
+        style="@style/SyleTitleText"
+        android:text="Feet To Meters"/>
+
+    <!--label enter -->
+    <TextView
+        android:id="@+id/lblEnter"
+        style="@style/StyleEnter"/>
+
+    <!--    label results -->
+    <TextView
+        android:id="@+id/lblResult"
+        style="@style/StyleResult" />
+
+    <!--    Feet  -->
+    <EditText
+        android:id="@+id/edtTxtFeet"
+        style="@style/StyleEditText"
+        android:layout_below="@id/lblEnter"
+        android:hint="Feet"
+        />
+
+    <TextView
+        android:id="@+id/txtViewMeters"
+        style="@style/StyleResultTextView"
+        android:hint="Meters"
+        android:layout_toRightOf="@id/edtTxtFeet"
+        />
+
+    <!--    Meters -->
+    <EditText
+        android:id="@+id/edtTxtMeters"
+        style="@style/StyleEditText"
+        android:layout_below="@id/edtTxtFeet"
+        android:hint="Meters"
+        />
+
+    <TextView
+        android:id="@+id/txtViewFeet"
+        style="@style/StyleResultTextView"
+        android:layout_below="@id/txtViewMeters"
+        android:hint="Feet"
+        android:layout_toRightOf="@id/edtTxtMeters"
+        />
+
+    <!--    Button -->
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/backButtonStyle"
+        android:onClick="back"
+        />
+
+
+
+
+
+</RelativeLayout>
