@@ -64,6 +64,13 @@ public class MainActivity extends AppCompatActivity {
             Intent feetTometersActivity = new Intent(this,Feet_to_Meters.class);
             startActivity(feetTometersActivity);
         }
+        //if Inches to Centimeters selected
+        else if (id == R.id.inchesTOcentimeters)
+        {
+            //start Inches to centimeters screen
+            Intent inchesCentimetersActivity = new Intent(this,Inches_to_Centimeters.class);
+            startActivity(inchesCentimetersActivity);
+        }
 
         return super.onOptionsItemSelected(item);
     }
