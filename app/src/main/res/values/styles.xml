@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SyleTitleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">@color/gradient_start</item>
+    </style>
+
+    <style name="StyleEditText">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:background">@color/highlight_blue</item>
+        <item name="android:hint"></item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="StyleEnter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/title</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:text">ENTER</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/highlight_teal</item>
+    </style>
+
+    <style name="StyleResult">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/title</item>
+        <item name="android:layout_toRightOf">@id/lblEnter</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginLeft">160dp</item>
+        <item name="android:text">RESULT</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/highlight_teal</item>
+    </style>
+
+    <style name="StyleResultTextView">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_below">@id/lblResult</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_toRightOf">@id/edtTxtMile</item>
+        <item name="android:layout_marginLeft">140dp</item>
+        <item name="android:background">@color/highlight_blue</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="backButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">500dp</item>
+        <item name="android:text">Back</item>
+        <item name="android:backgroundTint">@color/gradient_end</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+
+
+
+
+
+</resources>
