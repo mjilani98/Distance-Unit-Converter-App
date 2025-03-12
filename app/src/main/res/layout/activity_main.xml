@@ -1,33 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_light"
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
-
+        android:background="@color/background_dark"
+        android:fitsSystemWindows="true"
+        >
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
-
+            android:layout_height="?attr/actionBarSize"
+            app:title="Distance Unit Converter"
+            android:textAlignment="center"
+            app:titleCentered="true"
+            app:titleTextColor="@color/text_secondary"
+            />
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+
+<!--Convert between -->
+    <TextView
+        android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Convert between :"
+        android:textColor="@color/text_primary"
+        android:textSize="20dp" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <!--Mile to kilometers-->
+    <TextView
+        android:id="@+id/miTOkm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/message"
+        android:text="- Miles <--> Kilometers"
+        android:textColor="@color/text_primary"
+        android:textSize="15dp"/>
+
+<!--    Feet to Meters-->
+    <TextView
+        android:id="@+id/ftTOmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/miTOkm"
+        android:text="- Feet <--> Meters"
+        android:textColor="@color/text_primary"
+        android:textSize="15dp"/>
+
+<!--    Inches to Centimeters -->
+    <TextView
+        android:id="@+id/inTOcm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/ftTOmt"
+        android:text="- Inches <--> Centimeters"
+        android:textColor="@color/text_primary"
+        android:textSize="15dp"/>
+
+<!--    How to Use-->
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/inTOcm"
+        android:text="How to Use :"
+        android:textColor="@color/text_primary"
+        android:textSize="20dp"/>
+
+<!--    step 1 -->
+    <TextView
+        android:id="@+id/step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/instructions"
+        android:text="1. Select a conversion from the menu."
+        android:textColor="@color/text_primary"
+        android:textSize="15dp"/>
+
+<!--    step 2-->
+    <TextView
+        android:id="@+id/step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/step1"
+        android:text="2. Enter a value, and the app converts it instantly."
+        android:textColor="@color/text_primary"
+        android:textSize="15dp"/>
+
+<!--    step 3-->
+    <TextView
+        android:id="@+id/step3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/step2"
+        android:text="3. Use the back button to return to the main menu."
+        android:textColor="@color/text_primary"
+        android:textSize="15dp"/>
+
+
+
+
+</RelativeLayout>
