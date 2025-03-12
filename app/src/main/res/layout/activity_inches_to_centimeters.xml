@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    tools:context=".Inches_to_Centimeters">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    Title -->
+    <TextView
+        android:id="@+id/title"
+        style="@style/SyleTitleText"
+        android:text="Inches To Centimeters"/>
+
+    <!--label enter -->
+    <TextView
+        android:id="@+id/lblEnter"
+        style="@style/StyleEnter"/>
+
+    <!--    label results -->
+    <TextView
+        android:id="@+id/lblResult"
+        style="@style/StyleResult" />
+
+    <!--    Inches  -->
+    <EditText
+        android:id="@+id/edtTxtInches"
+        style="@style/StyleEditText"
+        android:layout_below="@id/lblEnter"
+        android:hint="Inches"
+        />
+
+    <TextView
+        android:id="@+id/txtViewCentiMeters"
+        style="@style/StyleResultTextView"
+        android:hint="Cm"
+        android:layout_toRightOf="@id/edtTxtInches"
+        />
+
+    <!--    Centimeters -->
+    <EditText
+        android:id="@+id/edtTxtCentiMeters"
+        style="@style/StyleEditText"
+        android:layout_below="@id/edtTxtInches"
+        android:hint="Cm"
+        />
+
+    <TextView
+        android:id="@+id/txtViewInches"
+        style="@style/StyleResultTextView"
+        android:layout_below="@id/txtViewCentiMeters"
+        android:hint="Inches"
+        android:layout_toRightOf="@id/edtTxtCentiMeters"
+        />
+
+    <!--    Button -->
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/backButtonStyle"
+        android:onClick="back"
+        />
+
+
+
+
+
+</RelativeLayout>
