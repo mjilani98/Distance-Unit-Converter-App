@@ -59,7 +59,7 @@ The app features a clean and user-friendly interface with real-time conversions 
 
  -Clone the repository:
 
-git clone https://github.com/your-username/distance-converter-app.git
+git clone https://github.com/mjilani98/Distance-Unit-Converter-App.git
 
  -Open the project in Android Studio.
 
