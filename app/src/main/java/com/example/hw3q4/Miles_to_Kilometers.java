@@ -42,7 +42,7 @@ public class Miles_to_Kilometers extends AppCompatActivity
 
     }
 
-    //a class that handle textchanges
+    //a class that handle text changes
     public class TextChangeHandler implements TextWatcher
     {
 
@@ -100,7 +100,7 @@ public class Miles_to_Kilometers extends AppCompatActivity
             if(kmInMiles!=0) //if the current value is not zero
                 outputMiles.setText(String.format("%.2f",kmInMiles)+" Mi");
             else //else display Miles
-            outputMiles.setText("Miles");
+                 outputMiles.setText("Miles");
 
         }
     }
