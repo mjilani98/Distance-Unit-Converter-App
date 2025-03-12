@@ -1,5 +1,6 @@
 package com.example.hw3q4;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -14,9 +15,10 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.hw3q4.databinding.ActivityMainBinding;
-
+import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +28,13 @@ public class MainActivity extends AppCompatActivity {
 
         //display screen
         setContentView(R.layout.activity_main);
+
+        //display too bar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
     }
+
+
 
     //Method displays menu
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -42,9 +50,13 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        //if mile to kilometers selected
+        if (id == R.id.milesTOkilometers)
+        {
+            //start miles to kilometers activity
+            Intent mileKilmeterActivty = new Intent(this,Miles_to_Kilometers.class);
+            startActivity(mileKilmeterActivty);
+
         }
 
         return super.onOptionsItemSelected(item);
